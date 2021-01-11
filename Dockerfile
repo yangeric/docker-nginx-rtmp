@@ -32,7 +32,8 @@ RUN	apk update		&&	\
 		zlib-dev		\
 		openssl-dev		\
 		curl			\
-		make
+		make            \
+		tar
 
 
 RUN	cd /tmp/									&&	\
