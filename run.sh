@@ -129,5 +129,5 @@ else
 fi
 
 echo "Starting server..."
-/opt/nginx/sbin/nginx -g "daemon off;"
+/opt/nginx/sbin/nginx -g "daemon on;"
 
