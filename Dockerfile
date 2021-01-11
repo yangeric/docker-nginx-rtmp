@@ -41,7 +41,7 @@ RUN	cd /tmp/									&&	\
 	git clone https://github.com/arut/nginx-rtmp-module.git -b v${NGINX_RTMP_VERSION}
 
 RUN	cd /tmp										&&	\
-	tar xzf nginx-${NGINX_VERSION}.tar.gz						&&	\
+	tar xf nginx-${NGINX_VERSION}.tar.gz						&&	\
 	cd nginx-${NGINX_VERSION}							&&	\
 	./configure										\
 		--prefix=/opt/nginx								\
