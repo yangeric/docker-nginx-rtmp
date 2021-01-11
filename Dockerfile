@@ -50,7 +50,7 @@ RUN	cd /tmp										&&	\
 	make										&&	\
 	make install
 
-FROM alpine:edge
+FROM alpine:latest
 RUN apk update		&& \
 	apk add			   \
 		openssl		   \
