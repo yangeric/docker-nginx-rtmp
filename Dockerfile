@@ -18,6 +18,7 @@ RUN	apk update		&&	\
 		openssl			\
 		pkgconf			\
 		pkgconfig		\
+		mpfr3			\
 		mpc1			\
 		libstdc++		\
 		ca-certificates		\
@@ -48,7 +49,7 @@ RUN	cd /tmp										&&	\
 	make										&&	\
 	make install
 
-FROM alpine:latest
+FROM alpine:edge
 RUN apk update		&& \
 	apk add			   \
 		openssl		   \
