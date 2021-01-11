@@ -1,3 +1,8 @@
+update NGINX Version => 1.19.6
+update mpfr3 => mpfr4
+add  --with-cc-opt="-Wimplicit-fallthrough=0"
+
+
 # Docker-nginx-rtmp
 Docker image for an RTMP/HLS server running on nginx
 
