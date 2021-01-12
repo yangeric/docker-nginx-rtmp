@@ -28,7 +28,8 @@ http {
     default_type        application/octet-stream;
     sendfile            on;
     keepalive_timeout   65;
-
+	vhost_traffic_status_zone;
+	
     server {
         listen          8080;
         server_name     localhost;
@@ -37,7 +38,10 @@ http {
    			stub_status on;
   			access_log off;   
 		}
-
+		 location /status {
+            vhost_traffic_status_display;
+            vhost_traffic_status_display_format html;
+        }
 
         location /hls {
             types {
