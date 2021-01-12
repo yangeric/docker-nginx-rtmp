@@ -33,8 +33,7 @@ RUN	apk update		&&	\
 		openssl-dev		\
 		curl			\
 		make            \
-		tar   \
-		iftop
+		tar   
 
 
 RUN	cd /tmp/									&&	\
@@ -47,7 +46,7 @@ RUN	cd /tmp										&&	\
 	./configure										\
 		--prefix=/opt/nginx								\
 		--with-http_ssl_module								\
-		--add-module=../nginx-rtmp-module	--with-cc-opt="-Wimplicit-fallthrough=0"				&&	\
+		--add-module=../nginx-rtmp-module	--with-cc-opt="-Wimplicit-fallthrough=0"	--with-http_stub_status_module			&&	\
 	make										&&	\
 	make install
 

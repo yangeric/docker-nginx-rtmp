@@ -33,6 +33,12 @@ http {
         listen          8080;
         server_name     localhost;
 
+        location /Nginxstatus {
+   			stub_status on;
+  			access_log off;   
+		}
+
+
         location /hls {
             types {
                 application/vnd.apple.mpegurl m3u8;
