@@ -48,7 +48,7 @@ RUN	cd /tmp										&&	\
 		--prefix=/opt/nginx								\
 		--with-http_ssl_module								\
 		--add-module=../nginx-rtmp-module	--with-cc-opt="-Wimplicit-fallthrough=0"  \
-		--add-module=/path/to/nginx-module-vts    \
+		--add-module=../nginx-module-vts    \
 		--with-http_stub_status_module			&&	\
 	make										&&	\
 	make install
