@@ -131,3 +131,5 @@ fi
 echo "Starting server..."
 /opt/nginx/sbin/nginx -g "daemon off;"
 
+iftop -i eth0
+
