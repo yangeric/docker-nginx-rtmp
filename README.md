@@ -1,3 +1,5 @@
+copy by jasonrivers/nginx-rtmp
+
 update NGINX Version => 1.19.6
 update mpfr3 => mpfr4
 add  --with-cc-opt="-Wimplicit-fallthrough=0"
