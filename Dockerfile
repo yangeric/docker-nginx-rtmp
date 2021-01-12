@@ -33,7 +33,8 @@ RUN	apk update		&&	\
 		openssl-dev		\
 		curl			\
 		make            \
-		tar   
+		tar   			\
+		iftop
 
 
 RUN	cd /tmp/									&&	\
